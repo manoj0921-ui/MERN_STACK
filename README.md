@@ -6,7 +6,7 @@ Iam Manoj M from class of **3rd year CSE** today we've started to learn about Me
 
 ## Objective
 
-Mern stack is a technology used to creste a bth static and dynamic websites.
+Mern stack is a technology used to create a both static and dynamic websites.
 
 ## Stack Overflow
 
