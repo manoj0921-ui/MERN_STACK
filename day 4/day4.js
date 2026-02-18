@@ -1,5 +1,5 @@
 console.log("SECTION 1: VARIABLES & ASSIGNMENT");
-let name = "Balaganesh";
+let name = "Manoj";
 let age = 20;
 let isStudent = true;
 console.log("Name:", name);
@@ -160,10 +160,11 @@ function getGrade(mark) {
     return "Fail";
   }
 }
-let studentName = "Balaganesh";
+let studentName = "Manoj";
 let marks = 82;
 let grade = getGrade(marks);
 console.log("Name:", studentName);
 console.log("Marks:", marks);
 console.log("Grade:", grade);
+
 
