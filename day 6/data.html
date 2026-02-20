@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Friends Birthday List</title>
+  <link rel="stylesheet" href="C:\Users\Admin\Desktop\mern stack\data.css">
+</head>
+<body>
+
+  <h1>🎂 Friends Birthday List</h1>
+  <div class="container" id="friendsContainer"></div>
+
+  <script>
+    const data = {
+      "friends": [
+        {
+          "id": 1,
+          "name": "Alex Johnson",
+          "birthday": "1996-04-12",
+          "nickname": "AJ",
+          "phone": "+1-555-123-4567",
+          "email": "alex@example.com",
+          "reminderDaysBefore": 7,
+          "notes": "Loves hiking and coffee"
+        },
+        {
+          "id": 2,
+          "name": "Maya Patel",
+          "birthday": "1998-09-03",
+          "nickname": "May",
+          "phone": "+1-555-987-6543",
+          "email": "maya@example.com",
+          "reminderDaysBefore": 3,
+          "notes": "Allergic to peanuts"
+        },
+        {
+          "id": 3,
+          "name": "Daniel Kim",
+          "birthday": "1995-12-21",
+          "nickname": "Dan",
+          "phone": "+1-555-222-3344",
+          "email": "daniel@example.com",
+          "reminderDaysBefore": 5,
+          "notes": "Plays guitar"
+        },
+        {
+          "id": 4,
+          "name": "Sara Lopez",
+          "birthday": "2000-01-09",
+          "nickname": "Sar",
+          "phone": "+1-555-333-7788",
+          "email": "sara@example.com",
+          "reminderDaysBefore": 10,
+          "notes": "Vegetarian"
+        },
+        {
+          "id": 5,
+          "name": "Omar Hassan",
+          "birthday": "1997-07-18",
+          "nickname": "Omi",
+          "phone": "+1-555-444-9900",
+          "email": "omar@example.com",
+          "reminderDaysBefore": 2,
+          "notes": "Big football fan"
+        }
+      ]
+    };
+
+    const container = document.getElementById("friendsContainer");
+
+    data.friends.forEach(friend => {
+      const card = document.createElement("div");
+
+      const birthday = new Date(friend.birthday).toDateString();
+
+      card.innerHTML = `
+        <h3>${friend.name}</h3>
+        <p>Nickname: ${friend.nickname}</p>
+        <p>🎉 Birthday: ${birthday}</p>
+        <p>📞 ${friend.phone}</p>
+        <p>✉️ ${friend.email}</p>
+        <p>📝 ${friend.notes}</p>
+        <small>⏰ Remind ${friend.reminderDaysBefore} days before</small>
+        <hr/>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
